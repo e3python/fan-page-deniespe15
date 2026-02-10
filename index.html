@@ -4,180 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nayarit: Where Land Embraces the Sea</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
-    :root {
-      color-scheme: light;
-      --bg: #d7efff;
-      --card: #ffffff;
-      --text: #123048;
-      --muted: #4a667a;
-      --accent: #1f7a8c;
-      --accent-soft: #d6f3ee;
-      --border: #cfe6f2;
-      --sun: #f4c430;
-      --terra: #c24a2d;
-      --shadow: 0 18px 40px rgba(18, 48, 72, 0.16);
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      background: linear-gradient(180deg, #d7efff 0%, #eaf7ff 45%, #ffffff 100%);
-      color: var(--text);
-      font-family: "Poppins", "Helvetica Neue", Arial, sans-serif;
-      line-height: 1.6;
-    }
-
-    header {
-      padding: 56px 20px 32px;
-      text-align: center;
-      background: rgb(20, 159, 239);
-      color: #ffffff;
-      border-bottom: 1px solid rgba(18, 48, 72, 0.12);
-    }
-
-    header h1 {
-      margin: 0 0 12px;
-      font-size: clamp(2rem, 3vw, 3.1rem);
-      font-weight: 600;
-    }
-
-    header p {
-      margin: 0 auto;
-      max-width: 720px;
-      color: rgba(255, 255, 255, 0.9);
-      font-size: 1.05rem;
-    }
-
-    header .subtitle {
-      margin-top: 6px;
-      font-size: 0.95rem;
-    }
-
-    header .lead {
-      margin-top: 10px;
-      color: rgba(235, 245, 255, 0.85);
-    }
-
-    main {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 40px 20px 64px;
-    }
-
-    .section-title {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin: 32px 0 18px;
-      font-size: 1.5rem;
-      font-weight: 600;
-      color: #114b63;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
-    }
-
-    .photo-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 18px;
-    }
-
-    .photo-card {
-      border-radius: 16px;
-      overflow: hidden;
-    }
-
-    .photo-card img {
-      width: 100%;
-      height: 190px;
-      object-fit: cover;
-      display: block;
-      border-radius: 16px;
-      border: 2px solid rgba(18, 48, 72, 0.12);
-      box-shadow: var(--shadow);
-    }
-
-    .photo-card figcaption {
-      margin-top: 8px;
-      font-size: 0.92rem;
-      color: var(--muted);
-      text-align: center;
-    }
-
-    .card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 20px;
-      box-shadow: var(--shadow);
-    }
-
-    .card h3 {
-      margin: 0 0 10px;
-      font-size: 1.15rem;
-    }
-
-    .card p {
-      margin: 0 0 12px;
-      color: var(--muted);
-    }
-
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      background: var(--accent-soft);
-      color: var(--accent);
-      padding: 6px 12px;
-      border-radius: 999px;
-      font-weight: 600;
-      font-size: 0.9rem;
-      border: 1px solid rgba(31, 122, 140, 0.2);
-    }
-
-    .list {
-      display: grid;
-      gap: 16px;
-    }
-
-    .list-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 16px;
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-left: 5px solid var(--terra);
-      border-radius: 14px;
-      padding: 18px 20px;
-      box-shadow: var(--shadow);
-    }
-
-    .list-item span {
-      font-size: 1.6rem;
-    }
-
-    footer {
-      text-align: center;
-      padding: 24px 16px 40px;
-      color: var(--muted);
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
     <h1>Nayarit, where the land embraces the sea</h1>
-    <p class="subtitle"><small>(Where the land embraces the sea)</small></p>
-    <p class="lead">
+    <p>
       Nayarit is a small but vibrant state on Mexico’s Pacific coast. Its capital is
       Tepic, and its identity is shaped by beaches, mountains, Indigenous culture, and
       unforgettable flavors.
@@ -190,42 +22,78 @@
       <figure class="photo-card">
         <img src="logo.jpg" alt="Representative symbol of Nayarit">
         <figcaption>Local identity that celebrates history and culture.</figcaption>
+        <figcaption class="attribution">
+          Nayarit state coat of arms. Source: Wikipedia (Wikimedia Commons). License: Public Domain.
+        </figcaption>
       </figure>
-      <figure class="photo-card">
+      <figure class="photo-card featured-photo">
         <img src="playa.jpg" alt="Beach on the Nayarit coast">
         <figcaption>Pacific beaches with golden sand and perfect surf.</figcaption>
+        <figcaption class="attribution">
+          Punta Mita coastline, photo by interentals.com.
+          Source: Wikimedia Commons. License: CC BY-SA 4.0.
+        </figcaption>
       </figure>
       <figure class="photo-card">
         <img src="canoa.jpeg" alt="Canoe on a Nayarit lagoon">
         <figcaption>Rivers and lagoons for peaceful adventures.</figcaption>
+        <figcaption class="attribution">Aguamilpa taxi, by Antonio Tena. Source: original link, archived_link. License: CC BY 3.0.</figcaption>
       </figure>
       <figure class="photo-card">
         <img src="cora.jpg" alt="Art and tradition of the Cora people">
         <figcaption>Living culture: Indigenous traditions and craftsmanship.</figcaption>
+        <figcaption class="attribution">
+          Cora Indigenous community, photo by Andres08sandoval.
+          Source: Wikimedia Commons. License: CC BY-SA 4.0.
+        </figcaption>
       </figure>
       <figure class="photo-card">
         <img src="perico.jpg" alt="Tropical bird in Nayarit">
         <figcaption>Tropical wildlife with colorful birds.</figcaption>
+        <figcaption class="attribution">
+          Lilac-crowned Amazon (Amazona finschi), photo by Tomasz Wagner.
+          Source: Wikimedia Commons. License: CC BY-SA 2.0.
+        </figcaption>
       </figure>
       <figure class="photo-card">
         <img src="venado.jpeg" alt="Deer in Nayarit nature">
         <figcaption>Forests and mountains with rich biodiversity.</figcaption>
+        <figcaption class="attribution">
+          Black-tailed deer with fawns, photo by CS California.
+          Source: Wikimedia Commons. License: CC BY-SA 3.0.
+        </figcaption>
       </figure>
       <figure class="photo-card">
         <img src="Shrimp_fisherman.jpg" alt="Shrimp fisherman on a lagoon">
-        <figcaption>pescando en una laguna</figcaption>
+        <figcaption>Fishing on a lagoon at sunrise.</figcaption>
+        <figcaption class="attribution">
+          Shrimp fisherman on the coast of Nayarit, photo by Tomas Castelazo.
+          Source: Wikimedia Commons. License: CC BY-SA 3.0.
+        </figcaption>
       </figure>
       <figure class="photo-card">
         <img src="tepic.jpg" alt="Cathedral in Tepic, Nayarit">
-        <figcaption>catedral te Tepic Nayarit</figcaption>
+        <figcaption>Tepic Cathedral in Nayarit.</figcaption>
+        <figcaption class="attribution">
+          Monument in Tepic, Nayarit, photo by Lomcard.
+          Source: Wikimedia Commons. License: CC BY-SA 3.0.
+        </figcaption>
       </figure>
       <figure class="photo-card">
-        <img src="sd.jpg" alt="Huichol art">
-        <figcaption>arte huichol</figcaption>
+        <img src="arte.jpg" alt="Huichol art">
+        <figcaption>Huichol art and symbolism.</figcaption>
+        <figcaption class="attribution">
+          Fierce beaded jaguar in Puerto Vallarta, Mexico, photo by Wonderlane.
+          Source: Flickr. License: CC BY 2.0.
+        </figcaption>
       </figure>
       <figure class="photo-card">
         <img src="comida.jpg" alt="Typical dish: pescado zarandeado">
-        <figcaption>platillo tipico "pescado zarandeado"</figcaption>
+        <figcaption>Traditional dish: "pescado zarandeado."</figcaption>
+        <figcaption class="attribution">
+          Pescado Zarandeado (grilled snook with salt & house sauce), photo via Flickr.
+          Source: Flickr. License: CC BY 2.0.
+        </figcaption>
       </figure>
     </div>
 
